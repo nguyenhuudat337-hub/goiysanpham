@@ -1,0 +1,12 @@
+# Bước 1: Mapping department names
+python rename_departments.py
+# Bước 2: Vẽ lại heatmap  
+python regenerate_heatmap.py
+# Bước 3: Khai phá luật FP-Growth (cần mlxtend)
+pip install mlxtend
+python association_rules.py
+# Bước 4: Đánh giá hệ thống
+python evaluation.py
+# Bước 5: Chạy demo
+pip install streamlit
+streamlit run app.py
